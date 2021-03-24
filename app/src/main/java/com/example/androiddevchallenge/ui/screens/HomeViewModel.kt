@@ -17,7 +17,9 @@ package com.example.androiddevchallenge.ui.screens
 
 import androidx.lifecycle.ViewModel
 import com.example.androiddevchallenge.domain.entity.Weather
+import dagger.hilt.android.lifecycle.HiltViewModel
 
+@HiltViewModel
 class HomeViewModel : ViewModel() {
     sealed class HomeScreenState {
         object Loading : HomeScreenState()
